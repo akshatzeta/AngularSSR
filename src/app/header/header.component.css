@@ -1,0 +1,25 @@
+.jumbotron {
+    padding: 2rem 1rem;
+    background: linear-gradient(to right, #FF7E5F, #feb47b);
+    background-size: 200% 200%;
+    background-size: cover;
+    background-position: center;
+    position: relative;  /* Ensure it stays within the flow of the document */
+    z-index: 1;  /* Layer below the navigation */
+    height: auto;  /* Allow content to determine height */
+}
+.text-center {
+    position: relative;
+    z-index: 2;
+}
+
+.jumbotron::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+    z-index: 1;
+}

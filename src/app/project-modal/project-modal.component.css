@@ -1,0 +1,74 @@
+.modal-header {
+    background-color: #1c1c1c;
+    color: #0070d1;
+    border-bottom: 2px solid #0070d1;
+}
+
+.modal-title {
+    font-family: 'PlayStation', sans-serif;
+    font-size: 2rem;
+}
+
+.close-button {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #0070d1;
+}
+
+.modal-body {
+    background-color: #292929;
+    color: #b0b0b0;
+}
+
+.carousel {
+    margin-bottom: 20px;
+}
+
+.slide-image {
+    display: block;
+    width: 100%;
+    border: 3px solid #0070d1;
+}
+
+.subtitle {
+    color: #0070d1;
+    font-family: 'PlayStation', sans-serif;
+}
+
+.text {
+    font-family: 'PlayStation', sans-serif;
+    color: #b0b0b0;
+}
+
+.link {
+    color: #0070d1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #ffffff;
+}
+
+.divider {
+    border-top: 2px solid #0070d1;
+}
+
+.tag {
+    background-color: #0070d1;
+    color: #fff;
+    border-radius: 15px;
+    font-family: 'PlayStation', sans-serif;
+    font-size: 0.9rem;
+}
+
+.close-button {
+    filter: invert(29%) sepia(94%) saturate(3682%) hue-rotate(196deg) brightness(92%) contrast(102%);
+}
+
+.close-button:hover {
+    filter: none; /* Restore to original or apply white color on hover */
+}
+
+

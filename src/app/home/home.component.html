@@ -1,0 +1,30 @@
+<div class="theme container">
+    <div class="row justify-content-evenly">
+        <!-- About Me -->
+        <div class="col-lg shadow border m-1 about-me-section">
+            <div class="text-center">
+                <h2>About Me</h2>
+                <img src="../../assets/Screenshot 2024-08-20 103806.png" alt="Profile Picture" width="256" height="256" class="rounded-circle profile-pic">
+                <p>
+                    Currently, I am employed at Zealthix, where I continue to expand my knowledge and contribute to innovative projects. In addition to my front-end expertise, I have also worked on several personal projects using Spring Boot, which has given me a solid understanding of back-end development and RESTful API creation. This combination of front-end and back-end skills allows me to develop comprehensive solutions that meet both user and business needs.
+                </p>
+            </div>
+        </div>
+        <!-- Featured Projects -->
+        <div class="col-lg shadow border m-1 featured-projects-section">
+            <div class="text-center">
+                <h2>Featured Projects</h2>
+                <h4>{{featuredProject.name}}</h4>
+            </div>
+            <carousel>
+                <div *ngFor="let picture of featuredProject.pictures">
+                    <slide>
+                        <img src="{{picture}}" alt="slide" style="display: block; width: 100%;" class="project-slide">
+                    </slide>
+                </div>
+            </carousel>
+            <p class="mt-2">{{featuredProject.summary}}</p>
+            <p>Visit Portfolio section to learn more</p>
+        </div>
+    </div>
+</div>

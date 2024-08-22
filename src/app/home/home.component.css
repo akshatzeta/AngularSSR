@@ -1,0 +1,67 @@
+.theme {
+    background-color: #141414;
+    color: #d7d7d7;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.about-me-section, 
+.featured-projects-section {
+    background-color: #1f1f1f;
+    border-color: #3a3a3a;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.text-center h2 {
+    color: #0070d1;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.text-center h4 {
+    font-weight: 700;
+}
+
+.profile-pic {
+    border: 4px solid #0070d1;
+    margin-top: 15px;
+}
+
+.project-slide {
+    border: 2px solid #3a3a3a;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-slide:hover {
+    transform: scale(1.05);
+}
+
+.mt-2 {
+    color: #c0c0c0;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 20px;
+}
+
+h4, p {
+    margin-top: 15px;
+}
+
+a {
+    color: #0070d1;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f8f8f8;
+    text-decoration: underline;
+}

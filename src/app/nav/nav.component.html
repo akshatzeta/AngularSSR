@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-md border-bottom mb-3 navbar">
+    <div class="container position-relative">
+      <ul class="nav justify-content-center w-100">
+        <li class="nav-item" *ngFor="let link of navLinks">
+          <a class="nav-link" 
+             [routerLink]="link.path" 
+             routerLinkActive="active"
+             (mouseover)="moveCapsule($event)"
+             (click)="setActiveLink(link, $event)">
+            {{ link.label }}
+          </a>
+        </li>
+      </ul>
+      <!-- Capsule -->
+      <div class="active-capsule" [ngStyle]="{'left.px': capsuleLeft, 'width.px': capsuleWidth}"></div>
+    </div>
+  </nav>
+  

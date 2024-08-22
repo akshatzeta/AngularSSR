@@ -1,0 +1,38 @@
+.navbar {
+    background-color: #1c1c1c;
+    border-bottom: 2px solid #0070d1;
+    position: relative;
+    z-index: 0;
+}
+
+.navbar .nav-link {
+    color: #b0b0b0;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    padding: 10px 20px; 
+    position: relative;
+    transition: color 0.3s ease;
+    z-index: 1;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #ffffff;
+    
+}
+
+.nav-item {
+    margin: 0 10px;
+    position: relative;
+}
+
+
+.active-capsule {
+    position: absolute;
+    height: 40px; 
+    background-color: #0070d1; 
+    border-radius: 20px; 
+    transition: left 0.4s ease, width 0.4s ease;
+    z-index: 0;
+    opacity: 0.9; 
+}

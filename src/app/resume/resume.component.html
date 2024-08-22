@@ -1,0 +1,87 @@
+<div class="container text-center">
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="accordion">
+            <accordion-group [(isOpen)]="isWorkExperienceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100 accordion-heading" accordion-heading>
+                    <span>Work Experience</span>
+                    <span class="accordion-icon">
+                        <i *ngIf="!isWorkExperienceOpen" class="arrow-down"></i>
+                        <i *ngIf="isWorkExperienceOpen" class="arrow-up"></i>
+                    </span>
+                </button>
+                <div class="accordion-content flex-justify-start">
+                    <h2 class="mb-2">Intern/Trainee</h2>
+                    <h3 class="text-primary">Zealthix</h3>
+                    <ul>
+                        <li>Full stack Developer</li>
+                        <li>Tech stack: ReactJs, Redux, TailwindCSS, Vite</li>
+                    </ul>
+                    <!-- Embed Google Maps without API key -->
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1753.8331408896083!2d77.05038860969617!3d28.459474655486563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1724219081114!5m2!1sen!2sin" 
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </accordion-group>
+            
+
+            <accordion-group [(isOpen)]="isEducationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100 accordion-heading" accordion-heading>
+                    <span>Education</span>
+                    <span class="accordion-icon">
+                        <i *ngIf="!isEducationOpen" class="arrow-down"></i>
+                        <i *ngIf="isEducationOpen" class="arrow-up"></i>
+                    </span>
+                </button>
+                <div class="accordion-content">
+                    <h2 class="mb-0">Bachelor of Technology in CSE</h2>
+                    <h3 class="text-primary">National Institute of Technology Warangal</h3>
+                    <ul>
+                        <li>Graduated from NITW in May 2024</li>
+                        <li>Major: Computer Science and Engineering</li>
+                    </ul>
+                    <!-- Embed Google Maps without API key -->
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.897116874683!2d79.52826367590622!3d17.98352298300896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334fbb37aee6c3%3A0xf1b2c37fcb8fefce!2sNational%20Institute%20of%20Technology%2C%20Warangal%20(NIT%20Warangal)!5e0!3m2!1sen!2sin!4v1724219326476!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </accordion-group>
+
+            <accordion-group [(isOpen)]="isSkillOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100 accordion-heading" accordion-heading>
+                    <span>Skills</span>
+                    <span class="accordion-icon">
+                        <i *ngIf="!isSkillOpen" class="arrow-down"></i>
+                        <i *ngIf="isSkillOpen" class="arrow-up"></i>
+                    </span>
+                </button>
+                <div class="accordion-content">
+                    <ul>
+                        <li (mouseenter)="showSkillInfo('Java')" (mouseleave)="hideSkillInfo()">Java
+                            <span *ngIf="currentSkill === 'Java'" class="skill-info">3/5</span>
+                        </li>
+                        <li (mouseenter)="showSkillInfo('JavaScript')" (mouseleave)="hideSkillInfo()">JavaScript
+                            <span *ngIf="currentSkill === 'JavaScript'" class="skill-info">3/5</span>
+                        </li>
+                        <li (mouseenter)="showSkillInfo('React')" (mouseleave)="hideSkillInfo()">React
+                            <span *ngIf="currentSkill === 'React'" class="skill-info">4/5</span>
+                        </li>
+                        <li (mouseenter)="showSkillInfo('Spring_Boot')" (mouseleave)="hideSkillInfo()">Spring Boot
+                            <span *ngIf="currentSkill === 'Spring_Boot'" class="skill-info">2/5</span>
+                        </li>
+                        <li (mouseenter)="showSkillInfo('SQL')" (mouseleave)="hideSkillInfo()">SQL
+                            <span *ngIf="currentSkill === 'SQL'" class="skill-info">3/5</span>
+                        </li>
+                        <li (mouseenter)="showSkillInfo('CPP')" (mouseleave)="hideSkillInfo()">CPP
+                            <span *ngIf="currentSkill === 'CPP'" class="skill-info">4/5</span>
+                        </li>
+                        <li (mouseenter)="showSkillInfo('Agile_Development')" (mouseleave)="hideSkillInfo()">Agile Development
+                            <span *ngIf="currentSkill === 'Agile_Development'" class="skill-info">4/5</span>
+                    </ul>
+                </div>
+            </accordion-group>
+        </accordion>
+    </div>
+</div>
